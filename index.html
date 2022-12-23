@@ -374,20 +374,19 @@
                   To that end we focused on one of the most significant economic events in recent US history: 
                   the 2007-2008 financial crisis. During time of economic uncertainty, consumers may be more 
                   cautious of their spending which can in turn affect how they review a beer. This example was 
-                  chosen to highlight how an extrinsic factor such as an economic or political event can affect 
+                  chosen to highlight how an extrinsic factor such as an economy or politics can affect 
                   the way people review beers.
                   We have the hypothesis that in times of crisis, the drop in incomes leads to a higher weighting 
                   of the factor price.
-                  We will try to investigate this effect by observing the relative amount of price related 
-                  words in the available text reviews. We assume that an important topic will be mentioned more 
-                  often, and that, this effect can be visualized.
+                  We assume that a factor with higher importance will be mentioned more often. So if the importance
+                  of the feature price varies over time we should observe a higher or lower frequency in the text 
+                  reviews.
                 </p>
                 <div class="acorn"><img src="assets/img/beer_logo.svg" alt="Beer motif"></div>
                 <p>
-                  From the 5.7 million reviews, 240'000 mention at least one price related word 
-                  (You find the exact definition of price related in the Notebook). The figure below
-                  shows the count of monthly reviews, the count of monthly reviews mentioning at least one price
-                  related word or both in comparison. Note that the y-axis is logarithmic and not linear.
+                  From the 5.7 million reviews, 240'000 mention at least one price related word. The figure below
+                  shows the total number of monthly reviews, the count of monthly reviews mentioning at least one price
+                  related word or both. Note that the y-axis is logarithmic and not linear.
                 </p>
               </div>
               <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
@@ -403,7 +402,11 @@
               <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
               <div class="pure-u-sm-24-24 pure-u-md-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
                 <p>
-                  A larger number of price mentioning reviews (PMR) can also come from more reviews overall. To exclude this effect, we calculate the percentage of PMR. You can see the results in the following plot. The percentages are given per month and you can see the results either as bar plots, graph or as the interpolation. In green you can see when relative occurence of price related words increases, in red if the occurence decreases.
+                  To be able to compare different month, we need the relative amount of price related reviews
+                  (Given in percentage of the total number of reviews).                   
+                  On the visualization below you can see the fraction of PMR as bar-plot, graph or interpolation. 
+                  In green you can see when the fraction is increasing over time, in red the periods when  
+                  the occurence decreases.
                 </p>
               </div>
             </div>
@@ -418,10 +421,22 @@
               <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
               <div class="pure-u-sm-24-24 pure-u-md-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
                 <p>
-                  We used Chi-square tests on the percentages taken for six month time periods to see 
-                  in what time periods the increase or decrease of the frequency of PMR is significant 
-                  (more details in the NB).
-                  The graph below highlights the intervals with statistically significant changes between semesters.
+                  The first signs of the financial crisis appeared in the beginning of 2007. However, apparently 
+                  these signs were not sufficient to increase the weight of the factor price. <br>
+                  We can see that the price related words start increasing around September 2008. 
+                  This is the time when the bank "Lehman Brother" announced their bankruptcy and the crisis
+                  spread around the world. <br>
+                  Interestingly, after the "officially recognized" end of the crisis with the economic stimulation 
+                  package in February 2009, it took two more years until the weight of price in beer reviews started 
+                  to decrease again.
+                  Note that the effect size is quite low. From 4% of reviews mentioning price in 2008 the value 
+                  rises to 5% in 2011. So, even though significant, the change is quite small.
+                </p>
+                <div class="acorn"><img src="assets/img/beer_logo.svg" alt="Beer motif"></div>
+                <p>
+                  We used Chi-Square testing to see for which time intervals the change in occurence of price related
+                  reviews is statistically significant. <br>
+                  In the graph below the intervals with statistically significant changes highlighted in green.
                 </p>
               </div>
             </div>
@@ -436,18 +451,20 @@
               <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
               <div class="pure-u-sm-24-24 pure-u-md-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
                 <p>
-                  One can observe a clear increase of reviews mentioning price related words after 2008. 
-                  We interpret that, that the price becomes a more important factor in the period until 2011.
-                  Note that the effect size is quite low. From 4% of reviews mentioning price in 2008 the value 
-                  rises to 5% in 2011. So, even though significant, the change is quite small.
+                  The results show that there are periods with statistical significant changes, but these periods
+                  are rather sparse. Interestingly, from 2008 until 2015 the changes are almost continously
+                  significant.
                 </p>
                 <div class="acorn"><img src="assets/img/beer_logo.svg" alt="Beer motif"></div>
                 <p>
-                  Crisis is a quite abstract term. So, we decided to compare our results with a more tangible 
-                  factor, the unemployment. <br>
-                  The results are shown in the graph below. On top you can see whether the unemployment rate 
-                  increases (green) or decreases (red). In the same manner the evolution of PMR fraction is 
-                  depicted on the bottom.
+                  Crisis is a pretty abstract term. So, we decided to compare our results with a more tangible 
+                  factor, the unemployment (information about the data in <a href="#story-notes">footer</a>).<br>
+                  The graph below shows both the evolution of the ratio of price related reviews and the evolution 
+                  of unemployment in the US. <br>
+                  In the upper half of the figure, green represents an increase in unemployment over time, while
+                  red stands for a decrease. <br>
+                  Following the same color code, in the lower half, increase and decrease of occurrence of price related
+                  reviews is depicted.
                 </p>
               </div>
             </div>
@@ -462,12 +479,16 @@
               <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
               <div class="pure-u-sm-24-24 pure-u-md-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
                 <p>
-                 We will focus on the time of the financial crisis. Interestingly, the trend of the PMR fraction
-                 follows the unemployment rate with approximately one year of delay, both for the increase and the 
-                 decrease. We cannot draw conclusions about the reasons from the data. 
-                 Possible explanations could be personal savings, that bridge a certain period of time with 
-                 financial security or unemployment insurances that replace a certain amount of the Previous 
-                 salary for some time.
+                  We saw before that the time period of constant statistically significant changes is from 2008 
+                  to 2015. So we will focus the analysis on this period of time.<br>
+                  We can see that the tendency in change of price related reviews follows the tendency of the 
+                  unemployment rate with approximately one year delay. <br>
+                  So, most likely there is a correlation between the two factors which intuitively makes sense. <br>
+                  When people lose their jobs they are more concerned about the price of the products they consume.
+                  This delay could be due to unemployment insurance or due to financial reserves. <br>
+                  As we only observe correlation and not causality, it is also possible that both events occur due 
+                  to another factor that causes unemployment at some point and a higher weighting of price for beers
+                  at another point in time. <br>
                 </p>
               </div>
             </div>
