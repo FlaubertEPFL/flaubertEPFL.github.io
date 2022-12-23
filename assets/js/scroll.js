@@ -91,7 +91,7 @@
   var linkList = document.createElement("ul");
   var hrLine = document.createElement("hr");
   //var linkText = ["INTRODUCTION", "ECONOMICS", "WHO HAS ACCESS & WHERE", "WHO ENROLLS & WHERE", "WHY ALGEBRA I"];
-  var linkText = ["INTRODUCTION", "LOCATION", "SENSORY FEATURES", "ECONOMICS"];
+  var linkText = ["INTRODUCTION", "LOCATION", "SENSORY FEATURES", "ECONOMICS", "CONCLUSION"];
  
 
   linkList.appendChild(hrLine);
