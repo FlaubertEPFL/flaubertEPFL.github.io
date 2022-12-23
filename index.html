@@ -353,12 +353,134 @@
           <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
         </div>
       </article>
+      <div class="empty__">
+      </div>
 
+<!-- ------------------------------------------------------------------ -------------------------------- -->
+<!-- LOIC PART -->
+<!-- ---------------------------------------------------------------------------------------------------- -->
+      <article class="narrative-wrap">
+  <!-- ----------------------------------------------------------------------------------------------------------- -->
+        <div class="narrative pure-g section">
+          <div id="SENSORY FEATURES" class="section"></div>
+          <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
+          <div class="opener pure-u-sm-24-24 pure-u-md-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
+            
+            <h3>
+              Intrinsic Factors in Beer Preferences: Insights from User Reviews and Ratings:
+            </h3>
+            <p>
+              We’ll look how some regions/clusters perceive their most liked type of beer. We’ll do so by getting 
+              most frequent words in the comments. We separated the latter into two groups: very well reviewed 
+              (>4 out of 5) and poorly reviewed beers’ comments (<2 out of 5).
+            </p>
+            <div class="acorn"><img src="assets/img/beer_logo.svg" alt="Beer motif"></div>
+            <p>
+              3 of our 4 clusters have a preference for IPA. These are known for their hoppy, bitter flavor and 
+              aroma, which is achieved by using large amounts of hops during the brewing process. Cluster 6 has a 
+              preference for a subtype called American IPA, not surprising that it corresponds to the east coast 
+              of the US.
+            </p>
+
+          </div>
+          <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
+        </div>
+      </article>
+      <div class="empty__">
+        <img src="./import/Sensory/Cluster7_Pos_wordcloud.png" width='auto' height='500'></iframe>
+      </div>
+
+      <article class="narrative-wrap">
+        <div class="narrative pure-g section">
+          <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
+          <div class="pure-u-sm-24-24 pure-u-md-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
+            <p>
+              You can read many words describing diverse flavors.
+            </p>
+          </div>
+        </div>
+      </article>
+      <div class="empty__">
+        <img src="./import/Sensory/Cluster7_Neg_wordcloud.png" width='auto' height='500'></iframe>
+      </div>
+
+      <article class="narrative-wrap">
+        <div class="narrative pure-g section">
+          <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
+          <div class="pure-u-sm-24-24 pure-u-md-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
+            <p>
+              Negative terms appear more often. Light and sweet might not come as negative at first. 
+              But for this variety of style it seems to be the case.
+              Just by looking at those graphs, guessing the type isn’t so hard. We find the essence of an IPA: bitter, 
+              hop, fruity, ...
+            </p>
+            <div class="acorn"><img src="assets/img/beer_logo.svg" alt="Beer motif"></div>
+            <p>
+              Only one group stands out by having a strong preference for Pale Lager. Those are light, crisp beers 
+              with low to medium hop bitterness and subtle malt flavors, often served chilled and popular as a 
+              refreshing drink. Most countries in this group stand in South America.
+            </p>
+          </div>
+        </div>
+      </article>
+      <div class="empty__">
+        <img src="./import/Sensory/Cluster10_Pos_wordcloud.png" width='auto' height='500'></iframe>
+      </div>
       
+      <article class="narrative-wrap">
+        <div class="narrative pure-g section">
+          <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
+          <div class="pure-u-sm-24-24 pure-u-md-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
+            <p>
+              Not as diverse as the IPA above, but we should note that high carbonation is a must for this type.
+            </p>
+          </div>
+        </div>
+      </article>
+      <div class="empty__">
+        <img src="./import/Sensory/Cluster10_Neg_wordcloud.png" width='auto' height='500'></iframe>
+      </div>
+
+      <article class="narrative-wrap">
+        <div class="narrative pure-g section">
+          <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
+          <div class="pure-u-sm-24-24 pure-u-md-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
+            <p>
+              Watery, corn, boring and metallic are obvious characteristics that do not make for a high-quality 
+              drink.            
+            </p>
+            <div class="acorn"><img src="assets/img/beer_logo.svg" alt="Beer motif"></div>
+            <p>
+              The presence of certain terms in reviews seems to be closely tied to the perceived taste of the 
+              drink. We’ll check that hypothesis by correlating the rating of each feature of our dataset to 
+              the overall rating. These are the following: appearance, aroma, palate taste. This correlation 
+              test has been computed on the whole dataset, not only clusters.
+            </p>
+          </div>
+        </div>
+      </article>
+      <div class="empty__">
+        <img src="./import/Sensory/sensory_regression_nobg.png" width='auto' height='500'></iframe>
+      </div>
+
+      <article class="narrative-wrap">
+        <div class="narrative pure-g section">
+          <div class="pure-u-sm-0-24 pure-u-md-4-24 pure-u-lg-7-24 pure-u-xl-8-24"></div>
+          <div class="pure-u-sm-24-24 pure-u-md-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
+            <p>
+              Taste has the highest R-value. Other factors, such as aroma, appearance, and palate, can also 
+              contribute to our perception of a beer, but ultimately it is the taste itself that determines 
+              whether we find a beer pleasing or not.
+            </p>
+          </div>
+        </div>
+      </article>
+      <div class="empty__">
+      </div>
 <!-- ------------------------------------------------------------------ -------------------------------- -->
 <!-- ECONOMY PART -->
 <!-- ---------------------------------------------------------------------------------------------------- -->
-    <article class="narrative-wrap">
+          <article class="narrative-wrap">
       <!-- ----------------------------------------------------------------------------------------------------------- -->
             <div class="narrative pure-g section">
               <div id="ECONOMICS" class="section"></div>
@@ -559,6 +681,8 @@
       
       
           </article>
+          <div class="empty__">
+          </div>
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
